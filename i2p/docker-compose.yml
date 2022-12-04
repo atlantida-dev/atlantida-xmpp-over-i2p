@@ -1,0 +1,17 @@
+version: "3.9" # optional since v1.27.0
+
+services:
+
+  # Official I2P Client
+  # https://geti2p.net/en/download/docker
+  #client:
+    #image: geti2p/i2p
+    #network_mode: host
+    #environment:
+      #- JVM_XMX=256m
+
+  daemon:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    network_mode: host

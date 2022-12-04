@@ -1,0 +1,3 @@
+[submodule "mod_darknet"]
+	path = mod_darknet
+	url = https://github.com/majestrate/mod_darknet.git

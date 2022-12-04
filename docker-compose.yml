@@ -1,0 +1,10 @@
+version: "3.9" # optional since v1.27.0
+
+services:
+  xmpp:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    network_mode: host
+    volumes:
+      - ./certs:/etc/prosody/certs:rw
